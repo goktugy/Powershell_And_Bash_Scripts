@@ -1,2 +1,2 @@
 # Powershell_And_Bash_Scripts
-Utility scripts written in shell and bash
+Utility scripts written using Powershell and Bash shell.
