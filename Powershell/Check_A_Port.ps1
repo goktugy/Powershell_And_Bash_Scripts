@@ -1,0 +1,1 @@
+netstat -ano | select-string -Pattern ':3000' | ConvertFrom-String -PropertyNames ProcessName,Proto,Local,Remote,State,PID| where Proto -eq 'TCP' | %{ $_.ProcessName = (Get-Process -Id $_.PID).ProcessName; $_ }  |Format-Table -AutoSize
